@@ -3,10 +3,10 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="container items-center justify-around py-10">
-      <h2 className="text-6xl font-bold font-sackers text-center mb-16 text-black drop-shadow-lg">
+      <h2 className="text-4xl min-[1200px]:text-6xl font-bold font-sackers text-center mb-10 min-[1200px]:mb-16 text-black drop-shadow-lg">
         About Me<span className="text-green-500">.</span>
       </h2>
-      <div className="flex items-start justify-around gap-10">
+      <div className="flex flex-col-reverse min-[1200px]:flex-row items-center min-[1200px]:items-start justify-around gap-10 px-6 min-[1200px]:px-0">
         <div className="basis-1/2 leading-8">
           <p>
             From a humble beginning in 2014, Sushmitha has grown to be a
@@ -40,10 +40,8 @@ const About = () => {
           </p>
         </div>
         <div
-          className="flex-shrink-0"
+          className="relative flex-shrink-0 w-full max-w-[460px] aspect-[46/55]"
           style={{
-            width: "460px",
-            height: "550px",
             clipPath:
               "polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%)",
             overflow: "hidden",
@@ -52,9 +50,8 @@ const About = () => {
           <Image
             src="/images/nagasushmitha.webp"
             alt="nagasushmitha"
-            width={460}
-            height={460}
-            className="object-cover w-full h-full"
+            fill
+            className="object-cover"
           />
         </div>
       </div>
