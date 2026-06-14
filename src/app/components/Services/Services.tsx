@@ -4,9 +4,9 @@ const Services = () => {
       <h3 className="text-4xl min-[1200px]:text-6xl font-bold font-sackers text-center mb-10 min-[1200px]:mb-16 text-black drop-shadow-lg">
         Services
       </h3>
-      <div className="flex justify-center gap-10 px-4">
+      <div className="flex flex-col min-[1200px]:flex-row justify-center items-center gap-10 px-4">
         <div className="w-full max-w-[375px]">
-          <h4 className="font-semibold text-2xl text-center mb-5">
+          <h4 className="font-semibold text-2xl text-center mb-5 drop-shadow-sm">
             Bridal Makeup
           </h4>
           <p className="leading-8">
@@ -18,7 +18,9 @@ const Services = () => {
           </p>
         </div>
         <div className="w-full max-w-[375px]">
-          <h4 className="font-semibold text-2xl text-center mb-5">Fashion</h4>
+          <h4 className="font-semibold text-2xl text-center mb-5 drop-shadow-sm">
+            Fashion
+          </h4>
           <p className="leading-8">
             Makeup for fashion is usually set to on-trends, concepts, creative
             shoot, fashion shows, modelling, portfolio shoots, prom, etc. Come
@@ -27,7 +29,9 @@ const Services = () => {
           </p>
         </div>
         <div className="w-full max-w-[375px]">
-          <h4 className="font-semibold text-2xl text-center mb-5">Party</h4>
+          <h4 className="font-semibold text-2xl text-center mb-5 drop-shadow-sm">
+            Party
+          </h4>
           <p className="leading-8">
             It&apos;s a glam world and you have level up to look glam everytime
             for Socialite parties, charity events, private events, award
